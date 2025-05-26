@@ -1,0 +1,17 @@
+name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
+books_file|stem|e7287080eacf0f87|51e1ad52e1535b89|2c530c1562a7fbd1|1646489859|books_read.csv|t20234.646091912s|s260b|260|file|local|vector|||0|package 'dplyr' was built under R version 4.3.1|
+books_df|stem|cbe2712eaf42b2b8|5bb99100f1fa5d77|43624123b337c163|1774793446||t20234.6906595394s|s478b|478|rds|local|vector|||0.25||
+book_row|stem|87fcdf6edc5a68c3|789b0b1b97c6e621|3b5a888908b53fe2|1593587715||t20234.6906601582s|s444b|444|rds|local|list||book_row_deb92a153ee2d90c*book_row_f99dfc240e7d6894*book_row_133c07022ae3dd1e*book_row_a2463d6e257c1dda*book_row_14745b7c8b5c6db2*book_row_46af79b757cfbb58*book_row_5483bd9ace2369b0*book_row_54c14bf2e5a972cf|0||
+book_meta_data_de2a640e179107d4|branch|677952a12fdfa605|b0714a0f67c39a06|487506c7144ca48e|-116276330||t20234.6906697755s|s450b|450|rds|local|vector|book_meta_data||0.61||
+book_meta_data_213d2ddb5a0c1ae3|branch|25d82fd32e830b3c|b0714a0f67c39a06|487506c7144ca48e|-1208998796||t20234.6906721761s|s534b|534|rds|local|vector|book_meta_data||0.2||
+book_meta_data_53ffa0ca18974492|branch|7f2bbc9f75fad87d|b0714a0f67c39a06|487506c7144ca48e|-652723031||t20234.6906743724s|s656b|656|rds|local|vector|book_meta_data||0.19||
+book_meta_data_8a11464f32e28abf|branch|ae50d02689a40fa9|b0714a0f67c39a06|487506c7144ca48e|-453092078||t20234.690676991s|s629b|629|rds|local|vector|book_meta_data||0.22||
+book_meta_data_c77137bc403b7ae4|branch|51fa565af8e23b0e|b0714a0f67c39a06|487506c7144ca48e|1901897667||t20234.6906800849s|s436b|436|rds|local|vector|book_meta_data||0.27||
+book_meta_data_13656d8a568e6369|branch|8e654437f3a101f6|b0714a0f67c39a06|487506c7144ca48e|1256855272||t20234.6906824956s|s361b|361|rds|local|vector|book_meta_data||0.2||
+book_meta_data_78fbf26d40490a89|branch|169cd3c11faf058d|b0714a0f67c39a06|487506c7144ca48e|-2138144650||t20234.6906846934s|s590b|590|rds|local|vector|book_meta_data||0.19||
+book_meta_data_e7218d3a42b31dea|branch|513c0ee3dd401830|b0714a0f67c39a06|487506c7144ca48e|-1914960355||t20234.6906872019s|s819b|819|rds|local|vector|book_meta_data||0.21||
+book_meta_data|pattern|6e86142af91dadeb|b0714a0f67c39a06||518074930||||4475|rds|local|vector||book_meta_data_de2a640e179107d4*book_meta_data_213d2ddb5a0c1ae3*book_meta_data_53ffa0ca18974492*book_meta_data_8a11464f32e28abf*book_meta_data_c77137bc403b7ae4*book_meta_data_13656d8a568e6369*book_meta_data_78fbf26d40490a89*book_meta_data_e7218d3a42b31dea|2.09||
+"%||%"|function|cbd551ae0ec020a9
+safe_extract_vector_collapse|function|5849d43307d1071d
+safe_extract_scalar|function|71f8dd04673e7a45
+fetch_book_details|function|69307e19a3bd2733
