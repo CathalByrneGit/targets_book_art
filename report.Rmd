@@ -1,0 +1,61 @@
+---
+title: "Book Art"
+author:  "`r Sys.info()['user']`"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: html_document
+---
+
+
+```{r echo = FALSE}
+
+## Read in targets
+library(targets)
+library(DT)
+tar_load(book_meta_data)
+
+tar_load(book_meta_art)
+
+#' Convert a data frame to a DataTable
+#'
+#' This function converts a given data frame to a DataTable with specified options.
+#'
+#' @param table A data frame to be converted to a DataTable.
+#' @param caption A character string for the table caption. Default is 'Table'.
+#' @return A DataTable object.
+#' @export
+convert_DT <- function(table,caption = 'Table'){
+  
+  out_table <- datatable(table,
+                         rownames = FALSE,
+                        options = list(autowidth = 'True',
+                                       scrollX = TRUE,
+                                       scrollY = "80vh",
+                                       paging = FALSE,
+                                       searching = FALSE),
+                        caption = caption)
+  
+  return(out_table)
+}
+
+
+```
+
+## Book Table
+
+```{r echo = FALSE}
+
+# Convert the processed data frame to a DataTable and display it
+convert_DT(book_meta_data,'Books Read Meta data')
+
+```
+
+## Art Generated
+
+```{r, figures-side, fig.show="hold",out.width= "50%", echo=FALSE}
+ par(mfrow = c(ceiling(sqrt(length(book_meta_art))), 
+                    ceiling(sqrt(length(book_meta_art)))))
+ for (plot_obj in book_meta_art) {
+        plot(plot_obj)
+      }
+```
+
