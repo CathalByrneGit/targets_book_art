@@ -58,15 +58,15 @@ steps may be affected by altering function code or changing data inputs.
 
 ### Targets Only
 
-    #> Warning message:
-    #> package 'tarchetypes' was built under R version 4.4.1 
+    #> + book_meta_data declared [8 branches]
+    #> + book_meta_art declared [8 branches]
 
 ![](README_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
 
 ### Functions and Targets
 
-    #> Warning message:
-    #> package 'tarchetypes' was built under R version 4.4.1 
+    #> + book_meta_data declared [8 branches]
+    #> + book_meta_art declared [8 branches]
 
 ![](README_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
 
@@ -130,7 +130,7 @@ targets::tar_load(name_target)## load name_target into environemnt
 - [Brilliant Blog unfortunately Blocked on CSO
   Network](https://blog.djnavarro.net/)
 
-# CSO Advice (Ignore unless Considering implementing a project using Targets)
+# (Ignore unless Considering implementing a project using Targets)
 
 - The normal target setup breaks when having a project setup on the file
   drive network while using the workbench server. Targets is fine when
@@ -143,10 +143,8 @@ targets::tar_load(name_target)## load name_target into environemnt
   Need a way to explicitly wait for data to be available before reading
   from it. After scouring targets documentation [CAS(content-addressable
   storage)](https://docs.ropensci.org/targets/reference/tar_repository_cas.html)
-  proved a solution. If implementing this approach contact
-  (<Cathal.Byrne@cso.ie>) to explain some caveats/complications which
-  arise. In short it augments and or replaces the  \_targets objects
-  system.
+  proved a solution. In short it augments and or replaces the
+   \_targets objects system.
 
 The **\_targets.R** script changes slightly where a global option is
 changed. The repository/storage used.
