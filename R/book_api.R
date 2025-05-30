@@ -1,9 +1,6 @@
-library(httr)
-library(jsonlite)
-library(tibble)
-
-# Safe operator for defaults (like %||% in other languages)
-`%||%` <- function(a, b) if (!is.null(a)) a else b
+# library(httr)
+# library(jsonlite)
+# library(tibble)
 
 # Helper function to safely extract a scalar value
 safe_extract_scalar <- function(data, field_name) {
